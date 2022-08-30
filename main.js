@@ -84,4 +84,29 @@ console.log(SortArray([7,8,10,3,23,1,4,2,9]))
 
 // a = a + b //8
 // b = a - b // 6
-// a  = a - b //2
+// a  = a - b //2 
+
+class Node {
+    constructor(data , next = null){
+        this.data = data;
+        this.next = next;
+    }
+}
+class LinkedList {
+    constructor(head){
+        this.head = null;
+        this.size = 0;
+    }
+    insertFirst(data){
+        this.head = new Node(data , this.head)
+    }
+    insertLast(){
+        
+    }
+    PrintList(){
+        
+    }
+}
+const ll = new LinkedList();
+ll.insertFirst(100);
+console.log(ll);
