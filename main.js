@@ -93,7 +93,7 @@ class Node {
     }
 }
 class LinkedList {
-    constructor(head){
+    constructor(){
         this.head = null;
         this.size = 0;
     }
@@ -103,10 +103,16 @@ class LinkedList {
     insertLast(){
         
     }
-    PrintList(){
-        
+    PrintListData(){
+        let current = this.head;
+        while (current) {
+            console.log(current.data);
+            current = current.next
+        }
     }
 }
 const ll = new LinkedList();
 ll.insertFirst(100);
-console.log(ll);
+ll.insertFirst(200);
+ll.insertFirst(300);
+ll.PrintListData();
